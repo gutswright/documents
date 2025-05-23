@@ -2,6 +2,19 @@
 
 #set page(width: 8.5in, height: 11in, margin: (x: 1cm, y: 1cm))
 #set page(fill: luma(230))
+#let adwaitaM = "Adwaita Mono"
+#let adwaitaS = "Adwaita Sans"
+#let regulartext = 9pt
+
+// #set text(font: "Libertinus Serif")
+#set text(font: "JetBrains Mono NL")
+// #set text(font: "Libertinus Serif", stretch: 50%)
+// #set text(font: "FiraCode Nerd Font Mono Ret")
+// #set text(font: "DejaVu Sans Mono")
+// ------------------------------ I like
+// #set text(font: "CaskaydiaCove NF")
+// #set text(font: "Adwaita Sans")
+// #set text(font: )
 
 // FUNCTIONS ===================================================
 
@@ -102,14 +115,14 @@
 
 #sectionHeader[Experience]
 
-#set text(11pt)
+#set text(regulartext)
 
 
 #v(-.4cm)
 #experienceheader(
   "System8",
   "Automation Engineer",
-  "Clearwater Florida",
+  "Clearwater, FL",
   "Mar 2025 - Current",
 )
 
@@ -133,15 +146,14 @@
 
 #experienceheader(
   "Otternaut (Sandbox SB04)",
-  "Co-Founder & Software Engineer",
-  "Orem Utah",
+  "Co-Founder",
+  "Orem, UT",
   "Aug 2024 – Apr 2025",
 )
 
 #list(
   [Launched a cross-platform SaaS mobile app for home service businesses using Flutter and FastAPI, integrated with Jobber API for real-time lead management.],
   [Supported 20+ active users and grew to \$359/month in recurring revenue.],
-  [Spearheaded development of REST APIs, deep linking, and payment flows using Stripe and Supabase.],
   [Collaborated in a 3-person agile founding team; directly interfaced with customers to drive product iterations.],
 )
 
@@ -168,7 +180,7 @@
 #experienceheader(
   "AI-Tutor (UVU Research Project)",
   "Frontend Engineer",
-  "Orem Utah",
+  "Orem UT",
   "Oct 2024 – May 2025",
 )
 
@@ -198,14 +210,14 @@
   rect()[
     #grid(
       columns: (1fr, 1fr),
-      "Grit Marketing | Sales Rep", align(right)[U.S., Summer 2021 & 2022],
+      "The Grit | Sales Rep.", align(right)[U.S., Summer 2021 & 2022],
     )
     #list([Closed 406 contracts and sold \$293K+ in pest control services across 8 states through door-to-door outreach.])
   ],
   rect()[
     #grid(
       columns: (1fr, 1fr),
-      "LDS Church | Representative", align(right)[Kiribati, 2018 - 2019],
+      "LDS Church | Rep.", align(right)[Kiribati, 2018 - 2019],
     )
     #list([Led group discussions, humanitarian projects, and mentored new representatives across island atolls.])
   ],
@@ -217,14 +229,14 @@
   rect()[
     #grid(
       columns: (1fr, 1fr),
-      "UVU Math Lab | Math Tutor", align(right)[Orem Utah, 2023 & 2024],
+      "UVU | Math Tutor", align(right)[Orem Utah, 2023 & 2024],
     )
     #list([Tutored 5-15 college students from Trigonometry to Calculus to Proofs solving 1-5 problems 4 days/week.])
   ],
   rect()[
     #grid(
-      columns: (7fr, 5fr),
-      "Calculus Instructor | SI Leader", align(right)[Orem, UT Jul-Dec 2023],
+      columns: (1fr, 1fr),
+      "UVU | SI Leader", align(right)[Orem, UT Jul-Dec 2023],
     )
     #list([Taught Calculus to 3-10 students 4 times per week and cooridinated with professors to prepare material.])
   ],
@@ -233,7 +245,7 @@
 #v(.2cm)
 #set text(15pt)
 #sectionHeader[Education]
-#set text(11pt)
+#set text(regulartext)
 
 #experienceheader(
   "Computer Science",
