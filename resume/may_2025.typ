@@ -56,19 +56,79 @@
 ]
 
 // #job("yo", 5)
+#let experienceheader(company, role, location, date) = [
+  #grid(
+    columns: (1fr, 1fr),
+    align(left)[#company | #role], align(right)[#location | #date],
+  )
+  #v(-.3cm)
+  #line(length: 100%)
+]
 
-Otternaut (Sandbox SB04) - Co-Founder & Software Engineer
+#experienceheader(
+  "Otternaut (Sandbox SB04)",
+  "Co-Founder & Software Engineer",
+  "Orem Utah",
+  "Aug 2024 – Apr 2025",
+)
 
-Smart Lead Management SaaS for Home Service Businesses ---------------- Aug 2024 – Apr 2025
+#list(
+  [Smart Lead Management SaaS for Home Service Businesses],
+  [Built and deployed a cross-platform mobile app that integrated with the Jobber API to manage real-time customer leads.],
+  [supported 20+ active users and generated \$359 in monthly recurring revenue (MRR).],
+)
 
-Built and deployed a cross-platform mobile app (Flutter, FastAPI, Google Maps API) that integrated with the Jobber API to manage real-time customer leads; supported 20+ active users and generated 359 in monthly recurring revenue (MRR).
+#let bulletpoints(activities) = [
+  #grid(
+    columns: (1fr, 1fr),
+    align(left)[Standard Activities
+      #for act in activities [
+        - #act
+      ]
+    ],
+    align(left)[Technologies Utilized
+      #grid(
+        columns: (1fr, 1fr),
+        list(
+          [Flutter],
+          [Mobile Deep Linking],
+          [Google Maps API],
+          [Jobber API & OAuth2],
+          [FastAPI],
+        ),
+        list(
+          [Docker & Compose],
+          [Supabase & PostgreSQL ],
+          [Stripe API],
+          [Hetzner VPS],
+          [SSH + rsync],
+        ),
+      )
+
+    ],
+  )
+]
+
+#let activities = (
+  [Collaborated in a 3-person founding team],
+  [Agile Development + Speaking to customers],
+  [Developing Android & IOS Apps],
+  [Creating and testing REST API],
+  [Reading Documentation],
+)
+
+
+#bulletpoints(activities)
+
+----------------
 
 Standard Activities:
-Collaborated in a 3-person founding team
+
+(Flutter, FastAPI, Google Maps API)
 
 adapting through pivots; gained firsthand experience in agile development, technical ownership, and startup operations.
 
-Led backend development using Docker, PostgreSQL, and OAuth2 authentication; deployed to Hetzner VPS with CI/CD via SSH and Docker Compose.
+using .
 
 Implemented deep linking and Firebase hosting for Android/iOS, learning and applying Supabase and advanced data handling under startup constraints.
 
