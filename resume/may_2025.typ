@@ -1,8 +1,10 @@
 // # CONSTANTS ================================================
 
 #set page(width: 8.5in, height: 11in, margin: (x: 1cm, y: 1cm))
+#set page(fill: luma(230))
 
 // FUNCTIONS ===================================================
+
 #set grid.hline(
   y: 1,
   start: 0,
@@ -70,7 +72,7 @@
 
 #align(
   center,
-  text(17pt)[
+  text(17pt, fill: rgb("#1F4A2D"))[
     * Joshua Wright *
   ],
 )
@@ -78,7 +80,7 @@
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
   align(center)[
-    #link("mailto:gutsw20@gmail.com")[gutsw20\@gmail.com]
+    #link("mailto:gutsw20@gmail.com")[#text(weight: "bold", fill: rgb("#1F4A2D"), "gutsw20@gmail.com")]
   ],
   align(center)[
     #link("https://github.com/gutswright")[gutswright]
