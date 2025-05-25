@@ -1,16 +1,16 @@
 // # CONSTANTS ================================================
 
 #set page(width: 8.5in, height: 11in, margin: (x: 1cm, y: 1cm))
-#set page(fill: luma(230))
+// #set page(fill: luma(230))
 #let adwaitaM = "Adwaita Mono"
 #let adwaitaS = "Adwaita Sans"
 #let regulartext = 9pt
 
 // #set text(font: "Libertinus Serif")
-#set text(font: "JetBrains Mono NL")
+// #set text(font: "JetBrains Mono NL")
 // #set text(font: "Libertinus Serif", stretch: 50%)
 // #set text(font: "FiraCode Nerd Font Mono Ret")
-// #set text(font: "DejaVu Sans Mono")
+#set text(font: "DejaVu Sans Mono")
 // ------------------------------ I like
 // #set text(font: "CaskaydiaCove NF")
 // #set text(font: "Adwaita Sans")
@@ -42,7 +42,7 @@
 #let experienceheader(company, role, location, date) = [
   #grid(
     columns: (5fr, 3fr),
-    align(left)[#company | #role], align(right)[#location | #date],
+    align(left)[#company: #role], align(right)[#location: #date],
   )
   #v(-.3cm)
   #line(length: 100%)
@@ -50,34 +50,33 @@
 
 #let bulletpoints(activities, technologies) = [
   #grid(
-    columns: (1fr, 1fr),
-    align(left)[Standard Activities:
-      #for act in activities [
-        - #act
+    columns: 1fr,
+    align(left)[Technologies Utilized:
+      #for tech in technologies [
+        #tech,
       ]
     ],
-    align(left)[Technologies Utilized:
-      #let fulllength = calc.floor(technologies.len()) - 1
-      #let halflength = calc.floor(fulllength / 2)
-      #v(-.2cm)
-      #grid(
-        columns: (1fr, 1fr),
-        [
-          #let n = 0
-          #while n < halflength + 1 {
-            [- #technologies.at(n)]
-            n = n + 1
-          }
-        ],
-        [
-          #let n = halflength
-          #while n < fulllength {
-            n = n + 1
-            [- #technologies.at(n)]
-          }
-        ],
-      )[ ]
-    ],
+
+    //   #let fulllength = calc.floor(technologies.len()) - 1
+    //   #let halflength = calc.floor(fulllength / 2)
+    //   #v(-.2cm)
+    //   #grid(
+    //     columns: (1fr, 1fr),
+    //     [
+    //       #let n = 0
+    //       #while n < halflength + 1 {
+    //         [- #technologies.at(n)]
+    //         n = n + 1
+    //       }
+    //     ],
+    //     [
+    //       #let n = halflength
+    //       #while n < fulllength {
+    //         n = n + 1
+    //         [- #technologies.at(n)]
+    //       }
+    //     ],
+    //   )[ ]
   )
 ]
 
@@ -152,14 +151,14 @@
 )
 
 #list(
-  [Launched a cross-platform SaaS mobile app for home service businesses using Flutter and FastAPI, integrated with Jobber API for real-time lead management.],
-  [Supported 20+ active users and grew to \$359/month in recurring revenue.],
-  [Collaborated in a 3-person agile founding team; directly interfaced with customers to drive product iterations.],
+  [Launched a cross-platform SaaS for home service businesses using the agile methodology and integrated with Jobber API for real-time lead management.],
+  [Collaborated with founding team to develop software and supported 20+ active users; grew recurring revenue to \$359/month],
+  [Spearheaded the back-end development and mobile app development],
 )
 
 #let activities = (
-  [Collaborated in a 3-person founding team],
-  [Agile Development + Speaking to customers],
+  [Collaborating with founding team],
+  [Utilized Agile Methodology],
   [Developing Android & IOS Apps],
   [Creating and testing REST API],
 )
@@ -179,19 +178,19 @@
 
 #experienceheader(
   "AI-Tutor (UVU Research Project)",
-  "Frontend Engineer",
-  "Orem UT",
+  "Front-end Engineer",
+  "Orem, UT",
   "Oct 2024 – May 2025",
 )
 
 #list(
-  [Redesigned and deployed AI chatbot UI (Svelte + Tailwind) for 300+ students and faculty, enhancing real-time access to grades, materials, and feedback.],
+  [Collaborated with Professor of Technology management to redesign and deploy AI chatbot UI for over 300 students and faculty enhancing real-time access to grades, materials, and feedback from professors.],
   [Implemented live response streaming, cookie-based authentication, and LaTeX rendering with Katex.],
 )
 
 
 #let activities = (
-  [Collaborated with professor of Technology Management],
+  [Collaborating with professor of Technology Management],
   [Developing in Svelte],
 )
 
@@ -210,16 +209,16 @@
   rect()[
     #grid(
       columns: (1fr, 1fr),
-      "The Grit | Sales Rep.", align(right)[U.S., Summer 2021 & 2022],
+      "The Grit: Sales Rep.", align(right)[U.S., Summer 2021 & 2022],
     )
     #list([Closed 406 contracts and sold \$293K+ in pest control services across 8 states through door-to-door outreach.])
   ],
   rect()[
     #grid(
       columns: (1fr, 1fr),
-      "LDS Church | Rep.", align(right)[Kiribati, 2018 - 2019],
+      "LDS Church: Missionary", align(right)[Kiribati, 2018 & 2019],
     )
-    #list([Led group discussions, humanitarian projects, and mentored new representatives across island atolls.])
+    #list([Taught the gospel, led group discussions, humanitarian projects, and mentored new missionaries across island atolls.])
   ],
 )
 
@@ -229,16 +228,16 @@
   rect()[
     #grid(
       columns: (1fr, 1fr),
-      "UVU | Math Tutor", align(right)[Orem Utah, 2023 & 2024],
+      "UVU: Math Tutor", align(right)[Orem UT, 2023 & 2024],
     )
-    #list([Tutored 5-15 college students from Trigonometry to Calculus to Proofs solving 1-5 problems 4 days/week.])
+    #list([Tutored college students daily from Trigonometry to Calculus .])
   ],
   rect()[
     #grid(
       columns: (1fr, 1fr),
-      "UVU | SI Leader", align(right)[Orem, UT Jul-Dec 2023],
+      "UVU: SI Leader", align(right)[Orem, UT Jul-Dec 2023],
     )
-    #list([Taught Calculus to 3-10 students 4 times per week and cooridinated with professors to prepare material.])
+    #list([Taught Calculus 4 times per week and coordinated with professors to prepare material.])
   ],
 )
 
@@ -250,12 +249,13 @@
 #experienceheader(
   "Computer Science",
   "Utah Valley University",
-  "Orem, Utah",
+  "Orem, UT",
   "August 2021 - April 2025",
 )
 #grid(
   columns: (1fr, 1fr),
-  list([Bachelor of Science], [Mathematics Minor]), list([Chairman of Computer Science Club], [Dean's List]),
+  list([Bachelor of Science in Computer Science], [Mathematics Minor]),
+  list([Chairman of Computer Science Club], [Dean's List]),
 )
 
 
