@@ -4,13 +4,13 @@
 // #set page(fill: luma(230))
 #let adwaitaM = "Adwaita Mono"
 #let adwaitaS = "Adwaita Sans"
-#let regulartext = 9pt
+#let regulartext = 10pt
 
 // #set text(font: "Libertinus Serif")
-// #set text(font: "JetBrains Mono NL")
+#set text(font: "JetBrains Mono NL")
 // #set text(font: "Libertinus Serif", stretch: 50%)
 // #set text(font: "FiraCode Nerd Font Mono Ret")
-#set text(font: "DejaVu Sans Mono")
+// #set text(font: "DejaVu Sans Mono")
 // ------------------------------ I like
 // #set text(font: "CaskaydiaCove NF")
 // #set text(font: "Adwaita Sans")
@@ -26,19 +26,12 @@
   position: top,
 )
 
-#let job(hello, num) = [
-  hi + #hello
-  #{ 10 * num }
-]
-
-
 #let sectionHeader(Title) = [
   #align(center)[
     * - #Title - *
   ]
 ]
 
-// #job("yo", 5)
 #let experienceheader(company, role, location, date) = [
   #grid(
     columns: (5fr, 3fr),
@@ -49,34 +42,18 @@
 ]
 
 #let bulletpoints(activities, technologies) = [
+  #let fulllength = calc.floor(technologies.len()) - 1
+  #let halflength = calc.floor(fulllength / 2)
   #grid(
     columns: 1fr,
     align(left)[Technologies Utilized:
-      #for tech in technologies [
-        #tech,
-      ]
-    ],
-
-    //   #let fulllength = calc.floor(technologies.len()) - 1
-    //   #let halflength = calc.floor(fulllength / 2)
-    //   #v(-.2cm)
-    //   #grid(
-    //     columns: (1fr, 1fr),
-    //     [
-    //       #let n = 0
-    //       #while n < halflength + 1 {
-    //         [- #technologies.at(n)]
-    //         n = n + 1
-    //       }
-    //     ],
-    //     [
-    //       #let n = halflength
-    //       #while n < fulllength {
-    //         n = n + 1
-    //         [- #technologies.at(n)]
-    //       }
-    //     ],
-    //   )[ ]
+    #let n = 0
+    #while n < fulllength {
+      [#technologies.at(n), ]
+      n = n + 1
+    }
+    #technologies.at(fulllength).
+        ],
   )
 ]
 
@@ -133,7 +110,8 @@
 )
 
 #let technologies = (
-  [Powershell & batch script],
+  [Powershell],
+  [Batch script],
   [iexpress],
   [Excel & Macros],
   [Google Cloud CLI],
@@ -152,8 +130,8 @@
 
 #list(
   [Launched a cross-platform SaaS for home service businesses using the agile methodology and integrated with Jobber API for real-time lead management.],
-  [Collaborated with founding team to develop software and supported 20+ active users; grew recurring revenue to \$359/month],
-  [Spearheaded the back-end development and mobile app development],
+  [Collaborated with founding team to develop software and supported 20+ active users; grew recurring revenue to \$359/month.],
+  [Spearheaded the backend development and mobile app development.],
 )
 
 #let activities = (
@@ -166,11 +144,14 @@
 #let technologies = (
   [Flutter],
   [Mobile Deep Linking],
-  [Google Maps & Stripe API],
-  [Jobber API & OAuth2],
+  [Google Maps],
+  [Stripe API],
+  [Jobber API],
+  [OAuth2],
   [FastAPI],
   [Docker & Compose],
-  [Supabase & PostgreSQL ],
+  [Supabase],
+  [PostgreSQL],
   [Hetzner VPS],
 )
 
@@ -178,14 +159,14 @@
 
 #experienceheader(
   "AI-Tutor (UVU Research Project)",
-  "Front-end Engineer",
+  "Frontend Engineer",
   "Orem, UT",
   "Oct 2024 – May 2025",
 )
 
 #list(
-  [Collaborated with Professor of Technology management to redesign and deploy AI chatbot UI for over 300 students and faculty enhancing real-time access to grades, materials, and feedback from professors.],
-  [Implemented live response streaming, cookie-based authentication, and LaTeX rendering with Katex.],
+  [Collaborated with Professor of Technology management to redesign and deploy AI chatbot UI for over 300 students and faculty.],
+  [enhancing real-time access to grades, materials, and feedback from professors.],
 )
 
 
@@ -198,27 +179,37 @@
   [Svelte (Javascript)],
   [HTML & Tailwind CSS],
   [Streaming Responses],
-  [Katex Parsing],
+  [Latex Rendering with Katex],
+  [Live response stream parsing & rendering],
+  [Cookie Based Authentication],
 )
 
 #bulletpoints(activities, technologies)
+
+#let companyName = 13pt
+#let role = 9pt
+#let location = 9pt
+
+
 
 #grid(
   columns: (1fr, 1fr),
   gutter: 12pt,
   rect()[
     #grid(
-      columns: (1fr, 1fr),
-      "The Grit: Sales Rep.", align(right)[U.S., Summer 2021 & 2022],
+      columns: (3fr, 8fr),
+      align(top + left)[
+        #text(companyName)[
+      The Grit:] ], align(right)[#text(role)[Sales Rep. - U.S., Summer '21 & '22]],
     )
     #list([Closed 406 contracts and sold \$293K+ in pest control services across 8 states through door-to-door outreach.])
   ],
   rect()[
     #grid(
-      columns: (1fr, 1fr),
-      "LDS Church: Missionary", align(right)[Kiribati, 2018 & 2019],
+      columns: (7fr, 5fr),
+      align(top + left)[#text(companyName)[LDS Church:] #text(role, baseline: -2.5pt)[Missionary]], align(right)[#text(location)[Kiribati, '18 & '19]],
     )
-    #list([Taught the gospel, led group discussions, humanitarian projects, and mentored new missionaries across island atolls.])
+    #list([Led group discussions, humanitarian projects, and mentored new missionaries across island atolls.])
   ],
 )
 
@@ -230,7 +221,7 @@
       columns: (1fr, 1fr),
       "UVU: Math Tutor", align(right)[Orem UT, 2023 & 2024],
     )
-    #list([Tutored college students daily from Trigonometry to Calculus .])
+    #list([Tutored hundreds of college students from introductory to advanced college math courses.])
   ],
   rect()[
     #grid(
@@ -257,6 +248,23 @@
   list([Bachelor of Science in Computer Science], [Mathematics Minor]),
   list([Chairman of Computer Science Club], [Dean's List]),
 )
+
+Frontend Developer – UVU Excellence & Innovation Initiative (E2i)
+Creating a CLI tool for interfacing with files and directories (without leaving the terminal)
+// Team-Building App Powered by LLMs and Qualtrics Data
+// Jan 2025 – Apr 2025
+//
+// Built an interactive frontend in Streamlit for a team-matching platform that auto-generated 50+ project teams using LLM-driven analysis of Qualtrics survey data and employee profiles.
+//
+// Developed a dynamic editable modal with search and removal functionality, enabling users to fine-tune AI-generated teams before committing selections to the database.
+//
+// Enabled project organizers to define goals and constraints, allowing the LLM to recommend optimal team structures, roles, and members based on real-time inputs.
+//
+// Supported the distribution of 500,000 in grant funding used to incubate student-led ventures and contract-based software development for real businesses.
+//
+// E2i -> On a team of 4 developers that built a team building Application using LLM's & Qualtrics Data to Automatically create 50+ teams handled 500,000 of grant money.
+//
+// ok
 
 
 // CODE GRAVEYARD
@@ -293,3 +301,31 @@
 // )
 
 
+    //   #let fulllength = calc.floor(technologies.len()) - 1
+    //   #let halflength = calc.floor(fulllength / 2)
+    //   #v(-.2cm)
+    //   #grid(
+    //     columns: (1fr, 1fr),
+    //     [
+    //       #let n = 0
+    //       #while n < halflength + 1 {
+    //         [- #technologies.at(n)]
+    //         n = n + 1
+    //       }
+    //     ],
+    //     [
+    //       #let n = halflength
+    //       #while n < fulllength {
+    //         n = n + 1
+    //         [- #technologies.at(n)]
+    //       }
+    //     ],
+    //   )[ ]
+
+
+// #let job(hello, num) = [
+//   hi + #hello
+//   #{ 10 * num }
+// ]
+
+// #job("yo", 5)
