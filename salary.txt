@@ -1,0 +1,129 @@
+In the Middle of March I started to began doing project based jobs for a company. This company is a startup, but only partially. Elysium is the company name run by owners John and Ryan who are brothers. The business is a return investment advisory, where they have people who talk to customers, understand their needs and risk tolerances, and then manage and invest money based on their algorithm. They are fairly successful and have become busy enough they have a need to add resources to their business so that they can automate a lot of the daily processes and scale the business.
+
+Whilst Ryan and John are Economists and businessmen, Steve has worked at hedge funds as a quant/software engineer for major investment firms. He is foremost an engineer who specializes in ecomometrics. Ryan and Steve have known each other for 20 years and trust one another. They are currently seeking funding from the right investor in order to add resources to their business.
+
+My friend Spencer and I began working on projects for Steve in Mid March and up until a couple days ago we were both hoping to land a summer job that would turn full-time in August with Elysium. Spencer just dropped off and now it is just me.
+
+When Spencer, John, Steve, Ryan and I met for lunch for the first time the other day they told us they want to hire us but can't offer us legit pay until they secure funding. Since March Steve has been paying Spencer and I Small amounts of money for completing projects. We have both been busy and everything we have been asked to do has required immense amounts of learning, so each of us have only been payed about $2000 - $2500 total in the last few months of work. (It is currently the start of June).
+
+Our work will include reading and studying econometrics/statistics textbooks, developing custom dashboards, designing infastructure as code workspaces that integrate with CI/CD pipelines, data processing with Pandas and Polars in Python, SQL familarity, Docker, CloudRun, creating custom windows installers, pulling realtime data, creating better models for predicting the stock market, backtesting, side projects for the Elysium team (software related), and it is expected that if I join the group that I will stay for a minimum of two years (Starting in August) but hopefully stay 2-5 years. There is an office in Arizona and one in Utah that I would work out of if the job goes through.
+
+I do not currently have a full time job lined up but am confident with my skills and personality that I could land a full-time job as a software developer. However, many of these full-time jobs would not be as great of an opportunity as the potential to work with the Elysium group. Spencer and I have also started acquiring clientele making websites and custom software for other small business owners that is showing profit. I like the idea of working for Steve at Elysium as well as going all-in on a business with Spencer.
+
+The thing I value most in my line of work is mentorship. I want to be around people who are able to teach me valuable skills that I can profit from in the future. That being said Spencer (who is my age but has been coding for a lot longer than I has been a mentor to me in many ways and we work very well together.) Steve in the few months that I have worked with him has been a great mentor to me as well and I stand to learn a lot from him as well as Spencer in the future if I were to work with either of them.
+
+Ryan, John, and Steve said they would like (us at the time but now it is only) me come up with a fair market price that I would be payed (both for the summer as well as starting in August - but I don't have to worry about August too much yet) as well as other things that I might ask for/bring to the table. The job market for software engineers is tough especially for Junior Engineers (and I just graduated in May), but Spencer and I are not average engineers and have qualities that many companies would love to have.
+
+
+
+What specific responsibilities will you have this summer (e.g. how much coding, DevOps, research, client support, etc.)? - This is up to discussion as well. I will be asked to be very flexible in my skillset and learing for whatever the needs are.
+
+    How many hours/week do you expect to work this summer?
+    My current guess would be around 40 hours a week, but it is more likely that I would be payed by the project, and not so much by the hour. It could really be between 20 to 55 hours per week. I don't know.
+
+    Will you be expected to work solo, or will you have collaborators, reviews, or pair programming with Steve? I will be working with Steve (likely over the whole summer) but this is difficult because our collaboration would all be online. In the future they are hoping to hire another person but I will have a lot expected of me as it stands right now. This also makes me harder to replace in the future.
+
+    Are there any expectations of on-call or after-hours support? Not yet, but as things scale and I am full-time this is a possibility. This is not likely in the short-term.
+
+📍 2. Location, Commitment, and Logistics
+
+    Will you be working remote or in-office this summer? Which city? I would ask to work in Arizona if possible, otherwise in Utah (where I currently live). I told the Elysium group that I would be flexible with moving as I don't have anything tying me down right now.
+
+    Will they reimburse or cover relocation, if that becomes relevant later? I don't know yet.
+
+    Do you expect to use your own equipment or will they provide a machine, accounts, etc.?
+    I believe I would be given equipment but I would likely want to substitute some of it out for my own equipment (so partially yes)
+
+💼 3. Market Research & Benchmarking
+
+To help assess a fair rate:
+
+    Would you prefer to be paid hourly or monthly/salary-style? I would not have a preference as of now.
+
+    What is your cost of living this summer? Are you trying to cover rent/expenses or save/invest? Rent is 650/month, groceries are a few hundred. I own a car and a motorcycle and need to get my own health insurance soon. I am hungry to make money as I have been in school for the past 5.5 years.
+
+    Are you open to equity or deferred comp in exchange for lower pay now? Or do you need full compensation now? There has been talk of me having a small portion of equity and the option to have Elysium reinvest some of my paycheck to allow it to grow but none of these things are final.
+
+🧠 4. Experience & Value You Bring
+
+Let’s identify what you offer that’s above market for a junior dev:
+
+    Can you list 3–5 key technical strengths you bring to the table right now (e.g., “fast learner,” “shipping production-ready code,” “Docker & CI/CD experience”)? I have proven myself as a hard-worker, someone who likes to learn and can learn quickly. I have experience with docker and docker compose. I am also mature, likeable and personable which is very uncommon amongst software engineers.
+
+    Do you have any industry-specific skills or knowledge (e.g., finance domain, data pipelines, quant models) that make you more valuable for Elysium? I am currently learning about these things through the projects that I have completed for Steve. Otherwise no.
+
+💡 5. Future Relationship / Risk Sharing
+
+This is especially relevant because they don’t have funding secured yet.
+
+    Would you be open to a tiered structure, such as a lower rate now with a retroactive bump or bonus if funding comes through? That is how things are set up now. Steve is paying me out of pocket (and it is not much) but ultimately I would like to make a lot of money in the future. I do not want to be too greedy but I do not want to pigeon-hole myself into low pay. 
+
+    Would you want to formalize the arrangement with a short-term contract or just keep things informal? I would like things to be formalized if they actually planned to add me to the companies payroll.
+
+    Would you want to ask for a mentorship guarantee or structure time to learn from Steve? No, as this would be implied.
+
+    The other thing I did not mention is that Ryan, John, and Steve have many contacts and would all be great references in the future. I could learn a lot from all of them and their connections. The skills I learn working for Steve could enable me to land very good (high-paying) qquant jobs in the future.
+
+    Is this enough info to give me a fair market price? Or what questions would you like answered that would help you and I to come up with a fair market price to ask for?
+
+
+
+
+    ### ChatGPT RESPONSE
+
+    “I propose a base monthly retainer of $3,500, with the understanding that this is below market but reflects my commitment and belief in Elysium’s long-term vision. If funding is secured, this could be retroactively revisited or adjusted moving forward.”
+
+    This gives them a predictable cash flow number.
+
+    $3,500/month = ~$875/week or ~$21/hr at 40 hrs/week.
+
+    This is modest but sustainable for your lifestyle, and shows you’re investing in the opportunity.
+
+    “Looking ahead to August, I would expect a full-time role to start in the range of $85,000–$100,000/year, depending on the responsibilities and funding situation.”
+
+This is fair because:
+
+    It’s within market for strong junior devs in fintech/infra roles.
+
+    You’ve got a hybrid role (software + infra + data + finance).
+
+    You’re already onboarded and proving yourself.
+
+### Gemini Response
+
+Here's the TLDR:
+
+You're a junior software engineer with strong learning, technical (Docker, CI/CD, Python), and interpersonal skills, considering a quant-focused startup (Elysium) where you've been doing project work for low pay. They want to hire you full-time in August but need funding first. You also have a profitable side business.
+
+For Summer (Pre-Funding - June to August):
+
+    Ask for: A monthly retainer of $2,500 - $3,500, possibly with per-project bonuses or small equity vesting upon funding.
+    Crucially: Include a retroactive adjustment clause to a competitive full-time rate once funding is secured.
+    Work: ~40 flexible hours/week, heavy on development, research, and learning from Steve.
+    Formalize: Get a short-term contract outlining these terms.
+
+For Full-Time (Starting August - Post-Funding):
+
+    Aim for: A base salary of $80,000 - $95,000 annually.
+    Negotiate: 0.5% - 1.5% company equity (vested over 3-4 years).
+    Expect: Full benefits (health, PTO, equipment, potential relocation reimbursement).
+
+Your Leverage: You're a rare blend of technical skill, rapid learning, and strong soft skills, making you a strategic asset for a growing quant startup. Your side business also shows entrepreneurial drive.
+
+### Claude RESPONSE
+
+Market Context
+Junior Software Engineer in Utah/Arizona:
+
+Utah range: $66,240-$83,500 annually ($70,316 average per Indeed) Talent
+
+### Gutteral Reaction
+
+Ask for $4500/month 
+$54,000 annually
+Roughly $26/hour for 40 hours/week
+
+and in August ask for $10,000/month 
+$120,000 annually
+Roughly $57/hour if 40 hours/week
+
