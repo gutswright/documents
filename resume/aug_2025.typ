@@ -108,7 +108,7 @@
   "Mar 2025 - Current",
 )
 
-#list([Built and deployed a Windows automation tool to export financial data from Bloomberg Terminal.], [Created and deployed workflow orchestration tools to calculate values for 4 data pipelines utilizing daily refreshed data from over 150 Ticker Symbols.], [Created and deployed data visualization interface using Streamlit & Terraform.])
+#list([Built and deployed a Windows automation tool to export financial data from Bloomberg Terminal.], [Created and deployed workflow orchestration tools to calculate values for 4 data pipelines utilizing daily refreshed data from over 150 Ticker Symbols.], [Created and deployed data visualization interface using Streamlit.])
 
 #let activities = (
   [Design automation process],
@@ -120,7 +120,7 @@
   [Batch script],
   [iexpress],
   [Excel & Macros],
-  [Google Cloud CLI],
+  [GCP & Google Cloud CLI],
   [Terraform],
   [Streamlit],
   [Chart.js],
