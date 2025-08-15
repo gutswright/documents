@@ -1,17 +1,13 @@
 // # CONSTANTS ================================================
 
-#set page(width: 8.5in, height: 11in, margin: (x: .8cm, y: .8cm))
+#set page(width: 8.5in, height: 11in, margin: (x: 1cm, y: 1cm))
 // #set page(fill: luma(230))
 #let adwaitaM = "Adwaita Mono"
 #let adwaitaS = "Adwaita Sans"
 #let regulartext = 10pt
-// #060f09
-// #0d1f12
-
-#let ForestGreen = "#1F4A2D";
 
 // #set text(font: "Libertinus Serif")
-#set text(fill: rgb("#000000"), font: "JetBrains Mono NL")
+#set text(font: "JetBrains Mono NL")
 // #set text(font: "Libertinus Serif", stretch: 50%)
 // #set text(font: "FiraCode Nerd Font Mono Ret")
 // #set text(font: "DejaVu Sans Mono")
@@ -31,13 +27,12 @@
 )
 
 #let sectionHeader(Title) = [
-  #align(center)[#text(weight: "bold", fill: rgb(ForestGreen), " - " + Title + " - ")
-    
+  #align(center)[
+    * - #Title - *
   ]
 ]
 
 #let experienceheader(company, role, location, date) = [
-  #set text(fill: rgb(ForestGreen), weight: "bold")
   #grid(
     columns: (5fr, 3fr),
     align(left)[#company: #role], align(right)[#location: #date],
@@ -51,7 +46,7 @@
   #let halflength = calc.floor(fulllength / 2)
   #grid(
     columns: 1fr,
-    align(left)[#text(weight: "bold", fill: rgb(ForestGreen), "Technologies Utilized:")
+    align(left)[Technologies Utilized:
     #let n = 0
     #while n < fulllength {
       [#technologies.at(n), ]
@@ -66,7 +61,7 @@
 
 #align(
   center,
-  text(17pt, fill: rgb(ForestGreen))[
+  text(17pt, fill: rgb("#1F4A2D"))[
     * Joshua Wright *
   ],
 )
@@ -74,19 +69,18 @@
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
   align(center)[
-    #link("mailto:gutsw20@gmail.com")[#stack(dir: ltr, spacing: 0.4em)[#image("./logos/Mail.svg", width: 8%)][#text(weight: "bold", fill: rgb(ForestGreen), "gutsw20@gmail.com")]]
+    #link("mailto:gutsw20@gmail.com")[#text(weight: "bold", fill: rgb("#1F4A2D"), "gutsw20@gmail.com")]
   ],
   align(center)[
-    #link("https://github.com/gutswright")[#stack(dir: ltr, spacing: 0.4em)[#image("./logos/GitHub.svg", width: 8%)][#text(weight: "bold", fill: rgb(ForestGreen), "gutswright")]]
+    #link("https://github.com/gutswright")[gutswright]
   ],
   align(center)[
-    #link("www.linkedin.com/in/joshua-dean-wright")[#stack(dir: ltr, spacing: 0.4em)[#image("./logos/LinkedIn.svg", width: 7%)][#text(weight: "bold", fill: rgb(ForestGreen), "Joshua (Guts) Wright")]]
+    #link("www.linkedin.com/in/joshua-dean-wright")[Joshua (Guts) Wright]
   ],
   align(center)[
-    #link("tel:3852834324")[#stack(dir: ltr, spacing: 0.4em)[#image("./logos/Phone.svg", width: 7%)][#text(weight: "bold", fill: rgb(ForestGreen), "3852834324")]]
+    #link("tel:3852834324")[3852834324]
   ],
 )
-
 
 #v(-.2cm)
 #line(length: 100%)
@@ -108,7 +102,7 @@
   "Mar 2025 - Current",
 )
 
-#list([Built and deployed a Windows automation tool to export financial data from Bloomberg Terminal.], [Created and deployed workflow orchestration tools to calculate values for 4 data pipelines utilizing daily refreshed data from over 150 Ticker Symbols.], [Created and deployed data visualization interface using Streamlit & Terraform.])
+#list([Built and deployed a Windows automation tool to export financial data from Bloomberg Terminal.])
 
 #let activities = (
   [Design automation process],
@@ -121,35 +115,9 @@
   [iexpress],
   [Excel & Macros],
   [Google Cloud CLI],
-  [Terraform],
-  [Streamlit],
-  [Chart.js],
-  [Dagster],
-  [Airflow]
 )
 
 #bulletpoints(activities, technologies)
-
-#experienceheader(
-  "RK4",
-  "Co-Founder & Engineer",
-  "Orem, UT",
-  "May 2025 - Current",
-)
-
-#list([Earned over \$10k in revenue by developing custom technology solutions for businesses.])
-
-#let technologies = (
-  [Svelte & SvelteKit],
-  [CSS],
-  [GSAP],
-  [Blender],
-  [Threlte],
-  [Docker & Compose],
-)
-
-#bulletpoints(activities, technologies)
-
 
 
 
@@ -218,9 +186,7 @@
 
 #bulletpoints(activities, technologies)
 
-#let companyName = 12pt
-#let textColor = "#122b1a"
- // weight: "bold")
+#let companyName = 13pt
 #let role = 9pt
 #let location = 9pt
 
@@ -231,17 +197,17 @@
   gutter: 12pt,
   rect()[
     #grid(
-      columns: (5fr, 14fr),
+      columns: (3fr, 8fr),
       align(top + left)[
-        #text(companyName, fill: rgb(ForestGreen), "The Grit:")], align(right)[#text(role, fill: rgb(ForestGreen), "Sales Rep.") #text(role,"   U.S., Summer '21 & '22")],
+        #text(companyName)[
+      The Grit:] ], align(right)[#text(role)[Sales Rep. - U.S., Summer '21 & '22]],
     )
-    #list([Closed 406 contracts and sold \$293K+ in pest control services in 8 months across 8 states through door-to-door outreach.])
+    #list([Closed 406 contracts and sold \$293K+ in pest control services across 8 states through door-to-door outreach.])
   ],
   rect()[
     #grid(
       columns: (7fr, 5fr),
-
-      align(top + left)[#text(companyName, fill: rgb(ForestGreen),"LDS Church:") #text(role, baseline: -2.5pt)[#text(fill: rgb(ForestGreen), "Missionary")]], align(right)[#text(location)[Kiribati, '18 & '19]],
+      align(top + left)[#text(companyName)[LDS Church:] #text(role, baseline: -2.5pt)[Missionary]], align(right)[#text(location)[Kiribati, '18 & '19]],
     )
     #list([Led group discussions, humanitarian projects, and mentored new missionaries across island atolls.])
   ],
@@ -252,21 +218,21 @@
   gutter: 12pt,
   rect()[
     #grid(
-      columns: (1fr, 9fr),
-      [#text(companyName, fill: rgb(ForestGreen), "UVU:")], align(right)[#text(role, fill: rgb(ForestGreen), "Math Tutor") #text(role,"            Orem UT, 2023 & 2024")],
+      columns: (1fr, 1fr),
+      "UVU: Math Tutor", align(right)[Orem UT, 2023 & 2024],
     )
     #list([Tutored hundreds of college students from introductory to advanced college math courses.])
   ],
   rect()[
     #grid(
-      columns: (1fr, 10fr),
-      [#text(companyName, fill: rgb(ForestGreen), "UVU:")], align(right)[#text(role, fill: rgb(ForestGreen), "SI Leader")#text(role, "             Orem, UT Jul-Dec 2023")],
+      columns: (1fr, 1fr),
+      "UVU: SI Leader", align(right)[Orem, UT Jul-Dec 2023],
     )
     #list([Taught Calculus 4 times per week and coordinated with professors to prepare material.])
   ],
 )
 
-// #v(.2cm)
+#v(.2cm)
 #set text(15pt)
 #sectionHeader[Education]
 #set text(regulartext)
@@ -283,12 +249,8 @@
   list([Chairman of Computer Science Club], [Dean's List]),
 )
 
-// Frontend Developer – UVU Excellence & Innovation Initiative (E2i)
-// Creating a CLI tool for interfacing with files and directories (without leaving the terminal)
-
-
-
-
+Frontend Developer – UVU Excellence & Innovation Initiative (E2i)
+Creating a CLI tool for interfacing with files and directories (without leaving the terminal)
 // Team-Building App Powered by LLMs and Qualtrics Data
 // Jan 2025 – Apr 2025
 //
