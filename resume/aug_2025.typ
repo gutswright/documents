@@ -182,7 +182,6 @@
   [OAuth2],
   [FastAPI],
   [Docker & Compose],
-  [Supabase],
   [PostgreSQL],
   [Hetzner VPS],
 )
@@ -208,7 +207,7 @@
 )
 
 #let technologies = (
-  [Svelte (Javascript)],
+  [Svelte (Typescript)],
   [HTML & Tailwind CSS],
   // [Streaming Responses],
   [Latex Rendering with Katex],

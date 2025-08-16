@@ -15,7 +15,7 @@ August 15, 2025
 
 Dear Hiring Manager,
 
-I am excited to apply for the position of #EmphasizedWord("Software Engineer I- PAAS.") As an engineer I love hard challenges and thrive when challenged to deliver the best results.
+I am excited to apply for the position of #EmphasizedWord("System Developer III- ServiceNow.") As an engineer I love hard challenges and thrive when challenged to deliver the best results.
 
 In my current role as an #EmphasizedWord[Automation Engineer] at System8, I’ve developed and deployed tools and workflows to manage complex financial data pipelines. Using #EmphasizedWord[PowerShell, Dagster, and Airflow,] I orchestrate daily data refreshes for over #EmphasizedWord[150 ticker symbols,] then visualize results through #EmphasizedWord[Streamlit] dashboards. Each application is deployed via Terraform to #EmphasizedWord[Google Cloud Platform,] ensuring consistency and scalability.
 
