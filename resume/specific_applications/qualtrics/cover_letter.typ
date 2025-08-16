@@ -2,36 +2,31 @@
 
 #set text(fill: rgb("#000000"), font: "JetBrains Mono NL")
 
-// #set text(font: "DejaVu Sans Mono")
-
 #let ForestGreen = "#1F4A2D";
-
-#let sectionHeader(Title) = [
-  #align(center)[#text(15pt, weight: "bold", fill: rgb(ForestGreen), " - " + Title + " - ")
-  ]
-]
 
 #let EmphasizedWord(KeyWord) = [
   #text(11pt, weight: "bold", fill: rgb(ForestGreen), KeyWord)
 ]
 
 
-#sectionHeader[Cover Letter]
-
-
+#v(2cm)
 
 August 15, 2025
 
 Dear Hiring Manager,
 
-My name is Joshua Wright and I'm excited to apply for the position of #EmphasizedWord("Software Engineer I- PAAS.") My background in automation, data orchestration, and full-stack development has prepared me to contribute quickly and effectively to your team.
+I am excited to apply for the position of #EmphasizedWord("Software Engineer I- PAAS.") As an engineer I love hard challenges and thrive when challenged to deliver the best results.
 
 In my current role as an #EmphasizedWord[Automation Engineer] at System8, I’ve developed and deployed tools and workflows to manage complex financial data pipelines. Using #EmphasizedWord[PowerShell, Dagster, and Airflow,] I orchestrate daily data refreshes for over #EmphasizedWord[150 ticker symbols,] then visualize results through #EmphasizedWord[Streamlit] dashboards. Each application is deployed via Terraform to #EmphasizedWord[Google Cloud Platform,] ensuring consistency and scalability.
 
-In addition to my current employment, I have #EmphasizedWord[co-founded] two technology ventures -#EmphasizedWord[ RK4 and Otternaut ]- which have given me experience building and deploying scalable applications from the ground up. These experiences included obtaining customers and building trust through the #EmphasizedWord[Agile methodology] loop. Through these roles I have built many websites using #EmphasizedWord[Svelte 5] and handled everything from backend development with #EmphasizedWord[FastAPI] to mobile app development with #EmphasizedWord[Flutter.]
+In addition to my current employment, I have #EmphasizedWord[co-founded] two technology ventures#EmphasizedWord[--RK4 and Otternaut--]which have given me experience building and deploying scalable applications from the ground up. These experiences taught me how to be scrappy, collaborate effectively with my team, and how to gain customers and build trust through #EmphasizedWord[Agile methodology.] Through these roles I have built many websites using #EmphasizedWord[Svelte 5] and handled everything from backend development with #EmphasizedWord[FastAPI] to mobile app development with #EmphasizedWord[Flutter.]
 
-I love to learn new things and be pushed in the workplace and in life. My Cousin, #EmphasizedWord[Daniel Wilkins,] has shared great things about the culture at Qualtrics, and I'm eager to bring my #EmphasizedWord[skills and enthusiasm] for solving hard real-world problems to your team.
+I love to learn new things and keep challenging myself both in the workplace and in life. #EmphasizedWord[Daniel Wilkins,] a current Qualtrics employee, has shared great things about the company's culture, and I'm eager to bring my #EmphasizedWord[skills and enthusiasm] for solving real-world problems to your team.
 
-Thanks for your time and consideration. I look forward to the opportunity to contribute to #EmphasizedWord[Qualtric's mission.]
+Thanks for your time and consideration. I look forward to contributing to #EmphasizedWord[Qualtrics' mission] with an #EmphasizedWord[All-in] mindset.
 
 Sincerely, \ Joshua Wright
+
+
+// “I love continuously learning and challenging myself to grow both in the workplace and in life.”
+// My background in automation, data orchestration, and full-stack development has prepared me to contribute quickly and effectively to your team.

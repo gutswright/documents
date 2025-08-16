@@ -102,7 +102,7 @@
 
 #v(-.4cm)
 #experienceheader(
-  "System8",
+  "Elysium",
   "Automation Engineer",
   "Clearwater, FL",
   "Mar 2025 - Current",
@@ -198,7 +198,7 @@
 
 #list(
   [Collaborated with Professor of Technology management to redesign and deploy AI chatbot UI for over 300 students and faculty.],
-  [enhancing real-time access to grades, materials, and feedback from professors.],
+  [Enhanced real-time access to grades, materials, and feedback from professors.],
 )
 
 
@@ -210,10 +210,10 @@
 #let technologies = (
   [Svelte (Javascript)],
   [HTML & Tailwind CSS],
-  [Streaming Responses],
+  // [Streaming Responses],
   [Latex Rendering with Katex],
-  [Live response stream parsing & rendering],
-  [Cookie Based Authentication],
+  [parsing & rendering streamed response in real-time],
+  [cookie based authentication],
 )
 
 #bulletpoints(activities, technologies)
